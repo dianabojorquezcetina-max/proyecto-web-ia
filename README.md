@@ -52,7 +52,7 @@ Durante esta actividad entendí mejor cómo se complementan HTML, CSS y JavaScri
 
 ## Trabajo en GitHub
 
-El repositorio contiene los archivos del proyecto, los Issues y un Pull Request integrado. El historial de commits permite revisar los cambios guardados. En el historial actual, los commits aparecen bajo la cuenta de Diana; por eso, no se atribuyen cambios de código a Genny que no figuren allí.
+El repositorio contiene los archivos del proyecto, los Issues y un Pull Request integrado. El historial de commits permite revisar los cambios guardados.
 
 ## Presentación en clase
 
