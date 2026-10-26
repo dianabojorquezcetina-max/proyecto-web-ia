@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b1b">
+  <meta name="description" content="Explora personajes de Rick and Morty con búsqueda, filtros y favoritos.">
+  <title>Portal Interdimensional | Rick and Morty</title>
+  <link rel="preconnect" href="https://rickandmortyapi.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Portal Interdimensional, inicio">
+        <span class="brand-mark" aria-hidden="true">✦</span><span>PORTAL<span class="brand-accent">.DIM</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#explorar">Explorar</a><a href="#favoritos">Favoritos <span id="favorite-count" class="nav-count">0</span></a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar a modo claro">☼ <span>Modo</span></button>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse-dot"></span> ARCHIVO MULTIVERSAL · C-137</p>
+          <h1 id="hero-title">Hay un universo<br>para <span>cada personaje.</span></h1>
+          <p class="hero-description">Salta entre dimensiones y descubre a los habitantes más extraordinarios del multiverso.</p>
+          <a class="hero-link" href="#explorar">Abrir el explorador <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="portal"><span>R</span></div><span class="spark spark-one">✦</span><span class="spark spark-two">✧</span><span class="planet">●</span></div>
+        <div class="hero-foot"><span>BASE DE DATOS EN VIVO</span><span>DIMENSIONES CONOCIDAS <b>∞</b></span></div>
+      </section>
+
+      <section class="explorer section-wrap" id="explorar" aria-labelledby="explorer-title">
+        <div class="section-heading"><div><p class="eyebrow">01 — ARCHIVO DE PERSONAJES</p><h2 id="explorer-title">Explora el multiverso</h2></div><p class="section-note">Datos consultados en tiempo real<br>desde otra dimensión.</p></div>
+        <div class="toolbar">
+          <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar personaje</span><input id="search-input" type="search" placeholder="Busca un personaje…" autocomplete="off"><kbd>/</kbd></label>
+          <label class="filter-label">ESTADO<select id="status-filter"><option value="all">Todos</option><option value="alive">Vivo</option><option value="dead">Muerto</option><option value="unknown">Desconocido</option></select></label>
+          <label class="filter-label">ESPECIE<select id="species-filter"><option value="all">Todas</option></select></label>
+          <button class="sort-button" id="sort-button" type="button" aria-pressed="false">A–Z <span aria-hidden="true">↕</span></button>
+        </div>
+        <div class="results-line"><p id="results-count" aria-live="polite">Conectando con el multiverso…</p><button class="reset-button" id="reset-filters" type="button">Limpiar filtros</button></div>
+        <div class="character-grid" id="character-grid" aria-live="polite" aria-busy="true"></div>
+        <div class="message-panel" id="message-panel" role="status" hidden></div>
+        <div class="load-more-wrap"><button class="load-more" id="load-more" type="button" hidden>Cargar más personajes <span aria-hidden="true">↓</span></button></div>
+      </section>
+
+      <section class="favorites-section section-wrap" id="favoritos" aria-labelledby="favorites-title">
+        <div class="section-heading"><div><p class="eyebrow">02 — COLECCIÓN PERSONAL</p><h2 id="favorites-title">Tus favoritos<span class="title-star"> ✳</span></h2></div><p class="section-note">Guardados en este dispositivo.</p></div>
+        <div class="character-grid favorites-grid" id="favorites-grid"></div>
+        <p class="empty-favorites" id="empty-favorites">Aún no has guardado personajes. Usa el corazón de una tarjeta para añadirlos aquí.</p>
+      </section>
+    </main>
+    <footer class="footer"><a class="brand" href="#inicio"><span class="brand-mark">✦</span><span>PORTAL<span class="brand-accent">.DIM</span></span></a><p>Información de personajes proporcionada por <a href="https://rickandmortyapi.com/" target="_blank" rel="noreferrer">The Rick and Morty API</a>.</p><a class="back-top" href="#inicio">Volver arriba ↑</a></footer>
+  </div>
+</body>
+</html>
