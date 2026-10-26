@@ -58,3 +58,15 @@ Para completar la consigna del curso, el equipo debe documentar aquí las contri
 ## Fuente de datos
 
 [The Rick and Morty API](https://rickandmortyapi.com/documentation)
+
+
+## Guía rápida para la presentación
+
+- fetch() solicita los datos a una URL; response.json() convierte la respuesta para que JavaScript pueda recorrerla.
+- HTML organiza el contenido, CSS controla su apariencia y JavaScript responde a las acciones y procesa los datos.
+- El buscador espera 350 ms después de escribir y consulta el endpoint de búsqueda por nombre.
+- Si la API responde con error o falla la conexión, catch muestra un mensaje para que la persona pueda reintentar.
+- Los favoritos se serializan en JSON dentro de localStorage y se recuperan al cargar la página.
+- GitHub Pages publica los archivos estáticos desde la rama main y la carpeta raíz.
+
+Esta guía acompaña la demostración; cada integrante debe explicar con sus propias palabras los cambios que revisó.
