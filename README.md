@@ -48,8 +48,6 @@ Se añadió la opción de ordenar los personajes alfabéticamente. El botón act
 
 ## Reflexión personal
 
-Borrador para que Diana lo revise y ajuste a su experiencia antes de entregar:
-
 Durante esta actividad entendí mejor cómo se complementan HTML, CSS y JavaScript para crear una página interactiva. Aprendí que fetch() sirve para solicitar información a una API y que también hay que considerar qué mostrar si la consulta falla. Usé la IA para obtener ideas y aclarar algunas partes, pero tuve que revisar sus respuestas y adaptar el código a lo que necesitaba el proyecto. También comprendí mejor cómo funcionan la búsqueda, los filtros y el guardado de favoritos. Para mejorar la página, probaría más búsquedas y revisaría su uso con teclado.
 
 ## Trabajo en GitHub
