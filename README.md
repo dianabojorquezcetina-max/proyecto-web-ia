@@ -5,11 +5,11 @@ Aplicación web para consultar personajes de Rick and Morty. La información se 
 ## Integrantes
 
 - Diana Guadalupe Bojórquez Cetina
-- Genny Diudone Navarrete Aguilar
+- Genny Diudone Navarrete Aguilar — GitHub: https://github.com/gennynavarrete
 
 ## Enlaces
 
-- Repositorio: https://github.com/dianabojorquezcetina-max/proyecto-web-ia
+- Repositorio del proyecto: https://github.com/dianabojorquezcetina-max/proyecto-web-ia
 - Aplicación: https://dianabojorquezcetina-max.github.io/proyecto-web-ia/
 
 ## Cómo usar la aplicación
