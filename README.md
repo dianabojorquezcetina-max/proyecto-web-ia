@@ -1,72 +1,61 @@
-# Portal Interdimensional — proyecto-web-ia
+# Portal Interdimensional
 
-Explorador interactivo de personajes de Rick and Morty. Consulta datos reales de la API pública y permite buscar, filtrar, ordenar y guardar favoritos.
+Aplicación web para consultar personajes de Rick and Morty. La información se obtiene de una API pública y se puede explorar con búsqueda, filtros y favoritos.
 
 ## Integrantes
 
 - Diana Guadalupe Bojórquez Cetina
-- Agregar aquí los nombres de los demás integrantes del equipo, si aplica.
+- Genny Diudone Navarrete Aguilar
 
-## Aplicación
+## Enlaces
 
 - Repositorio: https://github.com/dianabojorquezcetina-max/proyecto-web-ia
-- GitHub Pages: https://dianabojorquezcetina-max.github.io/proyecto-web-ia/ (activar Pages en Settings → Pages para publicar)
+- Aplicación: https://dianabojorquezcetina-max.github.io/proyecto-web-ia/
 
-## Uso
+## Cómo usar la aplicación
 
-1. Abre la aplicación publicada o sirve los archivos con un servidor web estático.
-2. La página consulta personajes en Rick and Morty API al cargar.
-3. Escribe un nombre para buscar; usa los filtros de estado y especie para acotar resultados.
-4. Selecciona Cargar más personajes para recorrer las páginas siguientes.
-5. Usa el corazón para guardar o quitar favoritos. Se conservan en el almacenamiento local del navegador.
-6. Usa A–Z para ordenar y el botón Modo para alternar entre tema oscuro y claro.
+1. Abre el enlace de GitHub Pages.
+2. Espera a que carguen los personajes desde la API.
+3. Busca por nombre o utiliza los filtros disponibles.
+4. Pulsa «Cargar más» para consultar más personajes.
+5. Guarda personajes en favoritos y abre esa sección para verlos. Los favoritos se conservan en el navegador.
 
-## Tecnologías y funcionamiento
+## Cómo está hecha
 
-- HTML define las secciones y controles accesibles de la página.
-- CSS crea el diseño adaptable y los temas de color.
-- JavaScript consulta la API Rick and Morty con fetch(), procesa el JSON, filtra resultados y actualiza la interfaz.
-- localStorage guarda favoritos y la preferencia de tema en el dispositivo actual.
-- Si la API falla o no encuentra coincidencias, la aplicación muestra un mensaje en pantalla.
+La página utiliza HTML para organizar el contenido, CSS para presentarlo y adaptarlo a distintos tamaños de pantalla, y JavaScript para consultar la API y controlar la búsqueda, los filtros y los favoritos. La consulta se realiza con fetch(). Los favoritos se guardan en localStorage.
 
-## Prompts importantes usados
+## Uso de inteligencia artificial
 
-1. «Analiza los requisitos de la tarea y conviértelos en una aplicación web de personajes que consuma Rick and Morty API.»
-2. «Implementa búsqueda, filtros de estado y especie, paginación y favoritos persistidos con localStorage.»
-3. «Añade una funcionalidad extra que podamos explicar: modo claro/oscuro y orden alfabético; mantén el diseño adaptable.»
+Se utilizó ChatGPT como apoyo para proponer código, aclarar funciones y corregir detalles. El código se revisó y se ajustó desde el editor web de GitHub.
 
-## Respuesta de IA que requirió correcciones
+### Prompts utilizados
 
-La primera propuesta de JavaScript usaba plantillas literales dentro del contenido que se pegaba en el editor. Al preparar el texto para GitHub, las comillas invertidas entraron en conflicto con el formato de entrada y el código no se pudo insertar. Se corrigió usando concatenación de cadenas en la plantilla de las tarjetas, y se verificó que el contenido apareciera en el editor antes de guardarlo.
+- «Crea una página web que consulte personajes de Rick and Morty API y muestre su nombre, imagen, estado y especie».
+- «Agrega búsqueda por nombre, filtros por estado y especie y una opción para cargar más personajes».
+- «Ayúdame a guardar personajes favoritos en localStorage y a mostrarlos en una sección propia».
 
-## Error y resolución
+### Respuesta que se corrigió
 
-La API devuelve una respuesta HTTP de error cuando una búsqueda no tiene coincidencias. La consulta comprueba response.ok, captura el error y presenta un mensaje de búsqueda sin resultados o de conexión fallida; el usuario puede cambiar el término o limpiar los filtros.
+Una propuesta inicial no coincidía del todo con los nombres de los archivos y los controles del proyecto. Se adaptó el código a index.html, style.css y script.js, y se revisó que los botones llamaran a las funciones correspondientes.
 
-## Modificación extra que podemos explicar
+### Error y solución
 
-Se agregó el orden alfabético como reto adicional. El botón alterna el orden ascendente y descendente del arreglo visible con localeCompare() en español; render() vuelve a dibujar las tarjetas sin cambiar los datos de la API. También se añadió el cambio de tema, que guarda la preferencia en localStorage.
+La consulta a la API puede fallar si no hay conexión o el servicio no responde. Se agregó manejo de errores para mostrar un aviso en la página en lugar de dejar la sección sin explicación.
 
-## Reflexión del equipo
+### Modificación adicional
 
-Completar después de probar y conversar en equipo: escriban qué aprendieron al usar IA, qué partes verificaron por su cuenta y qué cambiarían en una siguiente versión. Cada integrante debe poder explicar cómo fetch(), los filtros y localStorage funcionan.
+Se añadió la opción de ordenar los personajes alfabéticamente. El botón activa o desactiva ese orden para que sea más fácil recorrer los resultados.
 
-## Trabajo colaborativo y presentación
+## Reflexión personal
 
-Para completar la consigna del curso, el equipo debe documentar aquí las contribuciones de cada integrante y realizar los Issues, commits y Pull Request de acuerdo con el proceso solicitado. Presenten el funcionamiento y expliquen qué código generó la IA y qué ajustes hizo el equipo.
+Borrador para que Diana lo revise y ajuste a su experiencia antes de entregar:
 
-## Fuente de datos
+Durante esta actividad entendí mejor cómo se complementan HTML, CSS y JavaScript para crear una página interactiva. Aprendí que fetch() sirve para solicitar información a una API y que también hay que considerar qué mostrar si la consulta falla. Usé la IA para obtener ideas y aclarar algunas partes, pero tuve que revisar sus respuestas y adaptar el código a lo que necesitaba el proyecto. También comprendí mejor cómo funcionan la búsqueda, los filtros y el guardado de favoritos. Para mejorar la página, probaría más búsquedas y revisaría su uso con teclado.
 
-[The Rick and Morty API](https://rickandmortyapi.com/documentation)
+## Trabajo en GitHub
 
+El repositorio contiene los archivos del proyecto, los Issues y un Pull Request integrado. El historial de commits permite revisar los cambios guardados. En el historial actual, los commits aparecen bajo la cuenta de Diana; por eso, no se atribuyen cambios de código a Genny que no figuren allí.
 
-## Guía rápida para la presentación
+## Presentación en clase
 
-- fetch() solicita los datos a una URL; response.json() convierte la respuesta para que JavaScript pueda recorrerla.
-- HTML organiza el contenido, CSS controla su apariencia y JavaScript responde a las acciones y procesa los datos.
-- El buscador espera 350 ms después de escribir y consulta el endpoint de búsqueda por nombre.
-- Si la API responde con error o falla la conexión, catch muestra un mensaje para que la persona pueda reintentar.
-- Los favoritos se serializan en JSON dentro de localStorage y se recuperan al cargar la página.
-- GitHub Pages publica los archivos estáticos desde la rama main y la carpeta raíz.
-
-Esta guía acompaña la demostración; cada integrante debe explicar con sus propias palabras los cambios que revisó.
+En la demostración se puede mostrar la carga de personajes, la búsqueda, los filtros, los favoritos y la opción de ordenar. Todas las integrantes deben poder explicar cómo se consulta la API, qué hacen HTML, CSS y JavaScript, qué ocurre si la consulta falla y cómo se publicó el sitio en GitHub Pages.
